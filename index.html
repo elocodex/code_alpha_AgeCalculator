@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="age-container">
+            <div class="header">
+                    <div class="ctrl">
+                        <label for="day" id="day-label">Day</label>
+                        <input type="number" name="day" id="day-input" placeholder="DD" min="1">
+                        <div class="error" id="error"></div>
+                    </div>
+                    <div class="ctrl">
+                        <label for="month" id="month-label">Month</label>
+                        <input type="number" name="month" id="month-input" placeholder="MM" min="1">
+                        <div class="error"></div>
+                    </div>
+                    <div class="ctrl">
+                        <label for="year" id="year-label">Year</label>
+                        <input type="number" name="year" id="year-input" placeholder="YYYY" min="1">
+                        <div class="error"></div>
+                    </div>
+            </div>
+            <div class="flexy">
+                <hr>
+                <button id="age-btn"><img src="Assets/down-arrow-svgrepo-com.png" alt=""></button>
+            </div>
+            <div class="results">
+                <h1><span id="age-year">--</span> years</h1>
+                <h1><span id="age-month">--</span> months</h1>
+                <h1><span id="age-day">--</span> days</h1>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

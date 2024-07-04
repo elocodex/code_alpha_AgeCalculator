@@ -1,0 +1,127 @@
+*{
+    font-family: "Abril Fatface", serif;
+    padding: 0;
+    margin: 0;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+}
+.container{
+    background: #c1c4c4;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.age-container{
+    min-width: 45%;
+    min-height: 300px;  
+    background-color: #fff;
+    border-radius: 30px;
+    border-bottom-right-radius: 150px;
+    padding: 20px 60px;
+}
+.age-container .header{
+    width: 100%;
+    text-align: left;
+}
+.header{
+    width: 100%;
+    min-height: 50px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60px;
+    margin: 30px 0;
+}
+.header{
+    text-align: left;
+}
+.header .ctrl{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.header .error{
+    width: 150px;
+    font-size: 15px;
+    color: #e63f3fd2;
+    position: absolute;
+    bottom: -25px;
+}
+.header label{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+}
+.header input{
+    width: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #808080;
+    outline: 0;
+    font-size: 24px;
+}
+.flexy{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.flexy hr{
+    width: 80%;
+}
+.flexy button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: palevioletred;
+    border: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.flexy button:focus{
+    background-color: #000;
+}
+.flexy button img{
+    width: 40px;
+    transition: .5s;
+    perspective: 300px;display: block;
+}
+.flexy button img:hover{
+    transform: rotateZ(360deg);
+}
+.results{
+    width: 100%;
+    padding: 5px 20px;
+    min-height: 200px;
+}
+.results h1{font-size: 60px;}
+.results h1 span{
+    color: palevioletred;
+    font-weight: 800;
+}
+@media (max-width:800px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header input{
+        width: 100px;
+        padding: 20px 10px;
+        font-size: 18px;
+    }
+}
